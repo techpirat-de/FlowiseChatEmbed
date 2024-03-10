@@ -965,8 +965,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
               />
             )}
           </div>
-            <span style={{ color: this.props.poweredByTextColor }}>Powered by TechPirat</span>
-
+          <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
         </div>
       </div>
       {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
